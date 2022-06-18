@@ -4,3 +4,6 @@
 [submodule "OpenCore/OpenCore/tools/GenSMBIOS"]
 	path = OpenCore/OpenCore/tools/GenSMBIOS
 	url = https://github.com/corpnewt/GenSMBIOS
+[submodule "OpenCore/tools/GenSMBIOS"]
+	path = OpenCore/tools/GenSMBIOS
+	url = https://github.com/corpnewt/GenSMBIOS
