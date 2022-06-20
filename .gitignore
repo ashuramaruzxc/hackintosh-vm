@@ -14,4 +14,3 @@ OpenCore-Catalina/EFI/OC/Resources/
 images/*.img
 images/*.dmg
 images/*.dist
-OpenCore
