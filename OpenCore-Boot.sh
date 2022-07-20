@@ -18,7 +18,7 @@ MY_OPTIONS="+ssse3,+sse4.2,+popcnt,+avx,+aes,+xsave,+xsaveopt,check"
 # This script works for Monterey, Big Sur, Catalina, Mojave, and High Sierra. Tested with
 # macOS 10.15.6, macOS 10.14.6, and macOS 10.13.6.
 
-ALLOCATED_RAM="4096" # MiB
+ALLOCATED_RAM="8126" # MiB
 CPU_SOCKETS="1"
 CPU_CORES="4"
 CPU_THREADS="8"
@@ -49,7 +49,7 @@ args=(
   -device ide-hd,bus=sata.2,drive=OpenCoreBoot
   -device ide-hd,bus=sata.3,drive=InstallMedia
   -drive id=InstallMedia,if=none,file="$REPO_PATH/images/monterey.img",format=raw
-  -drive id=MacHDD,if=none,file="$REPO_PATH/images/monterey-hdd.img",format=qcow2
+  -drive id=MacHDD,if=none,file="$REPO_PATH/images/monterey-hdd.qcow2",format=qcow2
   -device ide-hd,bus=sata.4,drive=MacHDD
   # -netdev tap,id=net0,ifname=tap0,script=no,downscript=no -device virtio-net-pci,netdev=net0,id=net0,mac=52:54:00:c9:18:27
   -netdev user,id=net0 -device virtio-net-pci,netdev=net0,id=net0,mac=52:54:00:c9:18:27
